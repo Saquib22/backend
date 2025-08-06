@@ -14,6 +14,6 @@ app.use(express.urlencoded({limit:"16kb", extended:true})) // for encoding the u
 
 app.use(express.static("public")); // to store static file folder such pdf etc.
 
-app.use(express.cookieParser()); // to store the data in users server.
+app.use(cookieParser()); // to store the data in users server.
 
 export { app }

@@ -16,4 +16,12 @@ app.use(express.static("public")); // to store static file folder such pdf etc.
 
 app.use(cookieParser()); // to store the data in users server.
 
+
+//import routes
+
+import userRouter from "./routes/user.routes.js";
+
+// declare routes
+
+app.use('/api/v1/users',userRouter);
 export { app }
